@@ -36,6 +36,12 @@ class App
 		$params = $resolver->getArguments($request, $controller);
 
 		$response = call_user_func_array($controller, $params);
+
+		if (!$response instanceof Response) {
+			throw new \InvalidArgumentException("Todas las respuestas deben ser del tipo Symfony\Component\HttpFoundation\Response", 1);
+		}
+
+		$response->send();
 	}
 
 	public function getRoutes()

@@ -1,4 +1,13 @@
 {
+	"version": "1.0.0-dev",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Daniel Lozano Morales",
+			"email": "dn.lozano.mg@gmail.com",
+			"role": "Junior Developer"
+		}
+	],
     "require": {
         "symfony/http-foundation": "^3.0",
         "symfony/routing": "^3.0",
